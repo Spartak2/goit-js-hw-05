@@ -4,7 +4,7 @@ function getUserNames(users) {
     return users.map((user) => user.name);
 }
 
-console.table(
+console.log(
     getUserNames([
     {
       name: "Moore Hensley",
