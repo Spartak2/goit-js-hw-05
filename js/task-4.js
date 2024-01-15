@@ -2,49 +2,48 @@
 
 function getTotalBalanceByGender(users, gender) {
     return users
-    .filter((user) => user.gender === gender)
-    .map((user) =>  user.balance)
-    .reduce((totalBalance, number) => totalBalance + number);
+        .filter((user) => user.gender === gender)
+        .map((user) =>  user.balance)
+        .reduce((totalBalance, number) => totalBalance + number);
 }
 
-const allUsers = [
+const allUsersNow = [
     {
-    name: "Moore Hensley",
-    gender: "male",
-    balance: 2811
-  },
-  {
-    name: "Sharlene Bush",
-    gender: "female",
-    balance: 3821
-  },
-  {
-    name: "Ross Vazquez",
-    gender: "male",
-    balance: 3793
-  },
-  {
-    name: "Elma Head",
-    gender: "female",
-    balance: 2278
-  },
-  {
-    name: "Carey Barr",
-    gender: "male",
-    balance: 3951
-  },
-  {
-    name: "Blackburn Dotson",
-    gender: "male",
-    balance: 1498
-  },
-  {
-    name: "Sheree Anthony",
-    gender: "female",
-    balance: 2764
-  }
+        name: "Moore Hensley",
+        gender: "male",
+        balance: 2811
+    },
+    {
+        name: "Sharlene Bush",
+        gender: "female",
+        balance: 3821
+    },
+    {
+        name: "Ross Vazquez",
+        gender: "male",
+        balance: 3793
+    },
+    {
+        name: "Elma Head",
+        gender: "female",
+        balance: 2278
+    },
+    {
+        name: "Carey Barr",
+        gender: "male",
+        balance: 3951
+    },
+    {
+        name: "Blackburn Dotson",
+        gender: "male",
+        balance: 1498
+    },
+    {
+        name: "Sheree Anthony",
+        gender: "female",
+        balance: 2764
+    }
 ];
 
-console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
-
-console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
+console.log(getTotalBalanceByGender(allUsersNow, "male")); // 12053
+console.log(getTotalBalanceByGender(allUsersNow, "female")); // 8863
